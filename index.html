@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body onload="onInit()">
+    <h1>Mine Sweeper</h1>
+    <div>
+        <h3>choose your level</h3>
+        <input onclick="chooseLevel(this)" type="radio" name=".." value="4"> easy
+        <input onclick="chooseLevel(this)" type="radio" name=".." value="8"> hard
+        <input onclick="chooseLevel(this)" type="radio" name=".." value="12"> extreme
+    </div>
+    <div><p class="life">🖤🖤🖤</p></div>
+    <div><button class="state" onclick="onInit()">😃</button></div>
+
+        <table>
+        <tbody>
+
+
+        </tbody>
+    </table>
+    <div><p ><span class="hint" onclick="hintCells()">🕯️🕯️🕯️</span></p></div>
+        <button class="SafeClick" onclick="onSafeClick()">Safe Click</button><br><span class="spanSafe"> 3</span> clicks available</br></p>
+        <div><button class="manu" onclick="manuallyCreate()">manually create</button></div>
+        <div><button class="undo" onclick="onUndo()">undo</button></div>
+    <div><p><span class="seconds">0</span>:<span class="tens">0</span></p></div>
+
+    <footer>
+        Created by Daniel Nachum
+      </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
